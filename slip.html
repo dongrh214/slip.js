@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="./slip.js"></script>
+    <style>
+        #container div {
+            height: 100%;
+            width: 100%;
+        }
+        #container img {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+     <div id="container">
+         <div class="page page-1"><img src="img/01.jpg"></div>
+         <div class="page page-2"><img src="img/02.jpg"></div>
+         <div class="page page-3"><img src="img/03.jpg"></div>
+         <div class="page page-4"><img src="img/04.jpg"></div>
+     </div>
+    <script>
+        var container = document.getElementById('container');
+        var pages = document.querySelectorAll('.page');
+        var slip = Slip(container,"y").webapp(pages);
+
+    </script>
+</body>
+</html>
